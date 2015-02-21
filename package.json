@@ -1,0 +1,27 @@
+{
+  "name": "HVBot",
+  "version": "0.0.0",
+  "description": "",
+  "main": " ",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-coffee": "~0.13.0",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "load-grunt-tasks": "~3.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/imensha/HentaiVerse-x.git"
+  },
+  "author": "Imensha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imensha/HentaiVerse-x/issues"
+  },
+  "homepage": "https://github.com/imensha/HentaiVerse-x"
+}
