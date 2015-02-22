@@ -15,6 +15,7 @@ module.exports = (grunt) ->
       coffee:
         src: [
           "src/General/Globals.coffee"
+          "src/General/Player.coffee"
           "src/General/Main.coffee"
         ]
         dest: "tmp-build/script.coffee"
@@ -36,8 +37,8 @@ module.exports = (grunt) ->
         files: [
           "Gruntfile.coffee"
           "package.json"
-          "/src/**/*"
-          "/html/**/*"
+          "src/**/*"
+          "html/**/*"
         ]
         tasks: "build"
     clean:
