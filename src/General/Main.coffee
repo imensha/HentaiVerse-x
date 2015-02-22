@@ -2,9 +2,14 @@ Main =
   init: ->
     # Don't run the script if we're not battling
     params = Main.getParams()
-    return unless params?.s is "Battle"
+    return unless !!d.getElementById "monsterpane"
 
-    initFeatures()
+    if cont = d.getElementById "ckey_continue"
+      # Encounter has ended, click Continue
+      cont.click()
+      return
+
+    @initFeatures()
 
   initFeatures: ->
     initFeature = (name, module) ->
@@ -13,7 +18,8 @@ Main =
       catch err
         c.log "Error initializing #{name}", err
 
-    initFeature "Player",   Player
+    initFeature "Player",     Player
+    initFeature "Encounter",  Encounter
     
   getParams: ->
     return if location.search.lenght is 0
