@@ -15,6 +15,7 @@ module.exports = (grunt) ->
       coffee:
         src: [
           "src/General/Globals.coffee"
+          "src/Miscellaneous/Parser.coffee"
           # Battle modules --> 
           "src/Battle/Player.coffee"
           # <--
