@@ -1,11 +1,10 @@
 Main =
   init: ->
-    # Don't run the script if we're not battling
-    params = Main.getParams()
+    # Don't run the script if we're not in battle
     return unless !!d.getElementById "monsterpane"
 
+    # Check if battle has ended, click Continue
     if cont = d.getElementById "ckey_continue"
-      # Encounter has ended, click Continue
       cont.click()
       return
 
