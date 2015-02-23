@@ -1,4 +1,4 @@
-Parser =
+Parse =
   # HV uses http://ehgt.org/v/font/10b.png and indexed background offsets for
   # its characters
   # elements have a class in the style of f2<num>
@@ -32,6 +32,16 @@ Parser =
     for el in elements
       klass = el.className.match(/\w*$/)[0]
       num = klass.replace /^f\d/, ""
-      chars.push Parser.characters.get num
+      chars.push Parse.characters.get num
 
     chars.join ""
+
+  buff: (el) ->
+    buffInfo =
+      el.onmouseover.toString()   # Get function as string
+        .match(/\(.*\)/g)[1]      # Find second argument set
+        .replace /^\(|\)$/g, ""   # Remove parentheses
+    buff =
+      name: buffInfo.match(/'[\w,. ]*'/g)[0].replace /'/g, ""
+      describtion: buffInfo.match(/'[^']*'/g)[1].replace /'/g, ""
+      duration: parseInt buffInfo.match(/\d*$/)[0]

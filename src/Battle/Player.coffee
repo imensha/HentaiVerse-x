@@ -1,6 +1,5 @@
 Player =
   init: ->
-    c.log "Init player"
     sidepane = d.querySelector ".clb"
     statRoots = sidepane.querySelectorAll ".cwbdv"
 
@@ -13,6 +12,10 @@ Player =
     @MP = Player.statPercent @manaRoot
     @SP = Player.statPercent @spiritRoot
     @OC = Player.statPercent @overchargeRoot
+
+    @buffs = []
+    for buff in [d.querySelectorAll(".bte img")...]
+      @buffs.push Parse.buff buff
 
   statPercent: (root) ->
     current = root.querySelector(".cwb2").width
