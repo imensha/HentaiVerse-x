@@ -1,9 +1,10 @@
 {
   "name": "AutoVerse",
-  "version": "0.1.0",
-  "description": "",
-  "main": " ",
-  "dependencies": {},
+  "version": "0.0.1",
+  "description": "Comfortable HV grinding",
+  "meta": {
+	"name": "AutoVerse"
+  },
   "devDependencies": {
     "grunt": "~0.4.5",
     "grunt-contrib-clean": "^0.6.0",
@@ -11,9 +12,6 @@
     "grunt-contrib-concat": "~0.5.1",
     "grunt-contrib-watch": "~0.6.1",
     "load-grunt-tasks": "~3.1.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

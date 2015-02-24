@@ -1,6 +1,6 @@
 module.exports = (grunt) ->
 
-  importHTMl = (filename) ->
+  importHTML = (filename) ->
     "#{grunt.file.read("html/#{filename}.html").replace(/^\s+|\s+$</gm, '').replace(/\n/g, "")}"
 
   grunt.initConfig
@@ -11,6 +11,7 @@ module.exports = (grunt) ->
           pkg = grunt.config "pkg"
           pkg.importHTML = importHTML
           pkg
+        enumerable: true
         )
       coffee:
         src: [
@@ -28,6 +29,7 @@ module.exports = (grunt) ->
         files:
           "builds/AutoVerse.user.js": [
             "src/Meta/metadata.js"
+            "src/Meta/banner.js"
             "tmp-build/script.js"
           ]
     coffee:
