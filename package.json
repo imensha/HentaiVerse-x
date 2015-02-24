@@ -1,6 +1,6 @@
 {
-  "name": "HVBot",
-  "version": "0.0.0",
+  "name": "AutoVerse",
+  "version": "0.1.0",
   "description": "",
   "main": " ",
   "dependencies": {},
@@ -17,12 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/imensha/HentaiVerse-x.git"
+    "url": "git://github.com/imensha/AutoVerse.git"
   },
   "author": "Imensha",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/imensha/HentaiVerse-x/issues"
+    "url": "https://github.com/imensha/AutoVerse/issues"
   },
-  "homepage": "https://github.com/imensha/HentaiVerse-x"
+  "homepage": "https://github.com/imensha/AutoVerse"
 }

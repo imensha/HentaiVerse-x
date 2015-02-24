@@ -26,7 +26,7 @@ module.exports = (grunt) ->
         dest: "tmp-build/script.coffee"
       userscript:
         files:
-          "builds/HentaiVerse-X.user.js": [
+          "builds/AutoVerse.user.js": [
             "src/Meta/metadata.js"
             "tmp-build/script.js"
           ]
